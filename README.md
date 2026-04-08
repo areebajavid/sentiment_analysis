@@ -58,8 +58,3 @@ Input	Prediction
 Files: model.pkl (trained model) | scaler.pkl (TF-IDF vectorizer) | Movie_Review.csv (dataset)
 
 
----
-
-## About Section for GitHub
-
-**Short description:**

@@ -57,13 +57,6 @@ Input	Prediction
 
 Files: model.pkl (trained model) | scaler.pkl (TF-IDF vectorizer) | Movie_Review.csv (dataset)
 
----
-
-## That's it. 3 sections:
-
-1. **What It Does** — clear purpose + accuracy context
-2. **How It Works** — TF-IDF + Logistic Regression explained
-3. **Quick Start** — run in 2 commands
 
 ---
 

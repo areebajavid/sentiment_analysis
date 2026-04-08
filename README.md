@@ -1,16 +1,72 @@
-"# sentiment_analysis" 
-This project is a Movie Review Sentiment Analysis web application built using Python and Streamlit. It predicts whether a user-entered movie review is positive or negative using a pre-trained machine learning model.
+# 🎬 Movie Review Sentiment Analysis
 
-⚙️ How It Works
+### *Predict if a movie review is Positive or Negative using Logistic Regression*
 
-The application takes a text review as input, transforms it using a saved text scaler, and classifies the sentiment using a trained model to provide real-time predictions.
+[![Python](https://img.shields.io/badge/Python-3.x-3776AB?style=flat&logo=python)](https://python.org)
+[![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat&logo=streamlit&logoColor=white)](https://streamlit.io)
+[![Scikit-Learn](https://img.shields.io/badge/Scikit_Learn-F7931E?style=flat&logo=scikit-learn)](https://scikit-learn.org)
 
-🛠 Technologies Used
+---
 
-Python
+## What It Does
 
-Streamlit
+Enter a movie review → Model predicts sentiment as **Positive** or **Negative**.
 
-Scikit-learn
+**Dataset:** 1000 balanced movie reviews (500 positive, 500 negative)
 
-Pandas
+**Model:** Logistic Regression with TF-IDF vectorization
+
+**Accuracy Metrics:**
+| Metric | Value |
+|--------|-------|
+| Training Data | 800 reviews |
+| Testing Data | 200 reviews |
+| Confusion Matrix | Viewable in notebook |
+
+---
+
+## How It Works
+
+
+
+**Tech Stack:** Python, Scikit-Learn, Streamlit, Pandas, NLTK, WordCloud
+
+**Data Processing:**
+- Removed stopwords (the, a, an, etc.)
+- TF-IDF vectorization with 2500 max features
+- Balanced dataset (500 positive, 500 negative)
+
+---
+
+## Quick Start
+
+```bash
+# Install dependencies
+pip install streamlit pandas scikit-learn nltk wordcloud matplotlib
+
+# Run the app
+streamlit run app.py
+
+Or use the Jupyter notebook (Movie_review_Model_Creation.ipynb) to retrain the model.
+
+Sample Output
+Input	Prediction
+"This movie was amazing!"	Positive Review
+"Waste of time, terrible acting"	Negative Review
+
+
+Files: model.pkl (trained model) | scaler.pkl (TF-IDF vectorizer) | Movie_Review.csv (dataset)
+
+---
+
+## That's it. 3 sections:
+
+1. **What It Does** — clear purpose + accuracy context
+2. **How It Works** — TF-IDF + Logistic Regression explained
+3. **Quick Start** — run in 2 commands
+
+---
+
+## About Section for GitHub
+
+**Short description:**
